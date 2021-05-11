@@ -6,13 +6,12 @@ import Scroll from '../components/Scroll';
 import config from '../../config';
 import Footer from '../components/Footer';
 import SocialLinks from '../components/SocialLinks';
-import Subscribe from '../components/Subscribe';
 import Header from '../components/Header';
 
-import ipad from '../assets/images/ipad.png';
-import demoImage1 from '../assets/images/demo-image-01.jpg';
-import demoImage2 from '../assets/images/demo-image-02.jpg';
-import bgMaster from '../assets/images/bg-masthead.jpg';
+import benimg from '../assets/images/ben.jpg';
+import speakimg from '../assets/images/speak.jpg';
+import pcimg from '../assets/images/pc.jpg';
+import faimg from '../assets/images/fa.jpg';
 
 const IndexPage = () => (
   <Layout>
@@ -27,7 +26,7 @@ const IndexPage = () => (
           </h2>
           <Scroll type="id" element="about">
             <a href="#about" className="btn btn-primary">
-              About
+              About Ben
             </a>
           </Scroll>
         </div>
@@ -38,18 +37,17 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <h2 className="text-white mb-4">Built with Bootstrap 4</h2>
+            <h2 className="text-white mb-4">About Ben Rosser</h2>
             <p className="text-white-50">
-              Grayscale is a free Bootstrap theme created by Start Bootstrap. It
-              can be yours right now, simply download the starter on
-              <a href="https://github.com/anubhavsrivastava/gatsby-starter-grayscale">
-                the github repo
-              </a>
-              .
+              Having served 10 years in the police force, Ben founded an award winning organisation named The Pythian Club. Offering a variety of real opportunities to our young community in the East Midlands. 
+              <br /><br />
+              At 23 he joined Nottinghamshire Police. His goal, to support the community and be a positive influence to people living in Nottingham. 
+              <br /><br />
+              He was proud to serve the people of Nottingham, however during the 10 years service he saw that policing was changing due to government cuts, from being proactive to reactive. This disillusioned him, so he took it upon himself to start up a youth/community club to get back to being proactive. It was a risk but he passionate about supporting and engaging with young people directly. This resulted in forming The Pythian Club back in 2014.
             </p>
+            <img src={benimg} alt="Benjamin Rosser" className="benimg" />
           </div>
         </div>
-        <img src={ipad} className="img-fluid" alt="" />
       </div>
     </section>
 
@@ -57,15 +55,13 @@ const IndexPage = () => (
       <div className="container">
         <div className="row align-items-center no-gutters mb-4 mb-lg-5">
           <div className="col-xl-8 col-lg-7">
-            <img className="img-fluid mb-3 mb-lg-0" src={bgMaster} alt="" />
+            <img className="img-fluid mb-3 mb-lg-0" src={speakimg} alt="" />
           </div>
           <div className="col-xl-4 col-lg-5">
             <div className="featured-text text-center text-lg-left">
-              <h4>Shoreline</h4>
+              <h4>Motivational Speaking</h4>
               <p className="text-black-50 mb-0">
-                Grayscale is open source and MIT licensed. This means you can
-                use it for any project - even commercial projects! Download it,
-                customize it, and publish your website!
+                Ben Rosser is a world class public speaker, traveling across the UK to deliver important life changing messages to those who need it.
               </p>
             </div>
           </div>
@@ -73,16 +69,15 @@ const IndexPage = () => (
 
         <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div className="col-lg-6">
-            <img className="img-fluid" src={demoImage1} alt="" />
+            <img className="img-fluid" src={faimg} alt="" />
           </div>
           <div className="col-lg-6">
             <div className="bg-black text-center h-100 project">
               <div className="d-flex h-100">
                 <div className="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 className="text-white">Misty</h4>
+                  <h4 className="text-white">Education</h4>
                   <p className="mb-0 text-white-50">
-                    An example of where you can put an image of a project, or
-                    anything else, along with a description.
+                    Working alongside universities and organisations such as the FA Ben has delivered motivational talks inspirating hundreads of young people to fulfil their potential.
                   </p>
                   <hr className="d-none d-lg-block mb-0 ml-0" />
                 </div>
@@ -93,17 +88,15 @@ const IndexPage = () => (
 
         <div className="row justify-content-center no-gutters">
           <div className="col-lg-6">
-            <img className="img-fluid" src={demoImage2} alt="" />
+            <img className="img-fluid" src={pcimg} alt="" />
           </div>
           <div className="col-lg-6 order-lg-first">
             <div className="bg-black text-center h-100 project">
               <div className="d-flex h-100">
                 <div className="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 className="text-white">Mountains</h4>
+                  <h4 className="text-white">Community</h4>
                   <p className="mb-0 text-white-50">
-                    Another example of a project with its respective
-                    description. These sections work well responsively as well,
-                    try this theme on a small screen!
+                    During Ben's 10 years in the Police Force and subsequent years with The Pythian Club he has motivated and changed the lives of countless people, providing invaluable support to the community.
                   </p>
                   <hr className="d-none d-lg-block mb-0 mr-0" />
                 </div>
@@ -114,7 +107,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <Subscribe />
+    {/* <Subscribe /> */}
 
     <SocialLinks />
     <Footer />

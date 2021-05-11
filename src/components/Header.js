@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
+import logo from '../assets/images/logo.png';
 import config from '../../config';
 export default class Header extends Component {
   constructor(props) {
@@ -41,7 +42,7 @@ export default class Header extends Component {
       >
         <div className="container">
           <a className="navbar-brand" href="#page-top">
-            {config.siteTitle}
+            <img src={logo} alt="{config.siteTitle}" />
           </a>
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
@@ -79,7 +80,7 @@ export default class Header extends Component {
                   element="projects"
                 >
                   <a className="nav-link" href="#projects">
-                    Projects
+                    Speaking
                   </a>
                 </Scroll>
               </li>
@@ -87,9 +88,9 @@ export default class Header extends Component {
                 <Scroll
                   onClick={_ => this.toggleMenu(!openMenu)}
                   type="id"
-                  element="signup"
+                  element="contact"
                 >
-                  <a className="nav-link" href="#signup">
+                  <a className="nav-link" href="#contact">
                     Contact
                   </a>
                 </Scroll>
